@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -16,6 +17,8 @@ import { UnlessDirective } from './directives/unless.directive';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { RecipeService } from './recipe-book/recipe.service';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
+import { RecipeEditComponent } from './recipe-book/recipe-edit/recipe-edit.component';
+import { RecipePlaceholderComponent } from './recipe-book/recipe-placeholder/recipe-placeholder.component';
 
 
 @NgModule({
@@ -31,10 +34,13 @@ import { ShoppingListService } from './shopping-list/shopping-list.service';
     BasicHighlightDirective,
     BetterHighlightDirective,
     UnlessDirective,
-    DropdownDirective
+    DropdownDirective,
+    RecipeEditComponent,
+    RecipePlaceholderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [
     RecipeService,

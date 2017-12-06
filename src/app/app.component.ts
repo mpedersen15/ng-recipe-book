@@ -5,10 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  currentPage = 'recipe';
-
-  onPageChanged(newPage){
-    this.currentPage = newPage;
-  }
-}
+export class AppComponent {}
