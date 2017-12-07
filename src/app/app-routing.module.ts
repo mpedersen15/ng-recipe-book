@@ -10,7 +10,7 @@ import { RecipePlaceholderComponent } from './recipe-book/recipe-placeholder/rec
 const appRoutes: Routes = [
     { path: '', redirectTo: '/recipes', pathMatch: 'full' },
     { path: 'recipes', component: RecipeBookComponent, children: [
-        { path: '', component: RecipePlaceholderComponent }
+        { path: '', component: RecipePlaceholderComponent },
         { path: ':id', component: RecipeDetailComponent },
         { path: ':id/edit', component: RecipeEditComponent }
     ] },
