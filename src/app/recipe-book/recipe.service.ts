@@ -53,7 +53,6 @@ export class RecipeService {
   }
 
   deleteRecipe(index: number) {
-    console.log('trying to delete recipe: ', index);
     this.recipes.splice(index, 1);
     this.recipesUpdated.next(this.recipes.slice());
   }
